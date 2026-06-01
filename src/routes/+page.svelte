@@ -64,15 +64,79 @@
 		class="mx-auto mt-10 mb-10 w-full max-w-4xl px-4 sm:px-6 lg:px-8"
 		in:fade={{ duration: 1000, delay: 400 }}
 	>
-		<div class="glass-card rounded-3xl p-8 md:p-12 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
-			<div class="h-32 w-32 shrink-0 overflow-hidden rounded-full border-4 border-indigo-500/30 shadow-[0_0_20px_rgba(79,70,229,0.3)]">
-				<img src={profilePic} alt="Đặng Thảo Vy" class="h-full w-full object-cover" />
+		<div class="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10">
+			<div class="group h-40 w-40 shrink-0 overflow-hidden rounded-full border-4 border-indigo-500/30 shadow-[0_0_30px_rgba(79,70,229,0.3)] transition-all duration-500 hover:scale-105 hover:border-pink-500/50 hover:shadow-[0_0_40px_rgba(236,72,153,0.4)]">
+				<img src={profilePic} alt="Đặng Thảo Vy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
 			</div>
-			<div>
-				<h2 class="mb-4 font-display text-3xl font-bold text-white">About Me</h2>
-				<p class="leading-relaxed text-slate-400">
-					Xin chào! Mình là Đặng Thảo Vy, một sinh viên đam mê khám phá công nghệ số và ứng dụng trí tuệ nhân tạo. Mình tin rằng việc làm chủ các công cụ AI và công nghệ hiện đại không chỉ giúp tối ưu hóa việc học tập mà còn mở ra nhiều cơ hội phát triển bản thân. Chào mừng bạn đến với góc nhỏ của mình!
-				</p>
+			<div class="flex-1 w-full">
+				<h2 class="mb-6 font-display text-3xl font-bold text-white text-center md:text-left flex items-center justify-center md:justify-start gap-3">
+					About Me
+				</h2>
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-slate-300">
+					<div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/20 transition-all hover:-translate-y-1">
+						<span class="text-3xl mt-1 drop-shadow-lg">🐧</span>
+						<div>
+							<span class="block text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-1">Họ tên</span>
+							<span class="text-lg text-white font-medium">Đặng Thảo Vy</span>
+						</div>
+					</div>
+					
+					<div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/20 transition-all hover:-translate-y-1">
+						<span class="text-3xl mt-1 drop-shadow-lg">📅</span>
+						<div>
+							<span class="block text-xs font-semibold uppercase tracking-wider text-pink-400 mb-1">Ngày sinh</span>
+							<span class="text-lg text-white font-medium">30/01/2007</span>
+						</div>
+					</div>
+
+					<div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/20 transition-all hover:-translate-y-1 sm:col-span-2">
+						<span class="text-3xl mt-1 drop-shadow-lg">🎓</span>
+						<div>
+							<span class="block text-xs font-semibold uppercase tracking-wider text-purple-400 mb-1">Ngành học</span>
+							<span class="text-lg text-white font-medium">Công nghệ thông tin - Đại học Công nghệ (VNU-UET)</span>
+						</div>
+					</div>
+
+					<div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/20 transition-all hover:-translate-y-1 sm:col-span-2">
+						<span class="text-3xl mt-1 drop-shadow-lg">🎮</span>
+						<div>
+							<span class="block text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-1">Sở thích</span>
+							<span class="text-lg text-white font-medium leading-relaxed">Đọc tiểu thuyết Trinh thám, Xem Esport (LOL), Chơi nhạc cụ</span>
+						</div>
+					</div>
+
+					<div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/20 transition-all hover:-translate-y-1 sm:col-span-2">
+						<span class="text-3xl mt-1 drop-shadow-lg">✨</span>
+						<div>
+							<span class="block text-xs font-semibold uppercase tracking-wider text-amber-400 mb-1">Quote</span>
+							<span class="text-lg text-white font-medium leading-relaxed italic">"Không cần hoàn hảo, chỉ cần mỗi ngày tốt hơn một chút"</span>
+						</div>
+					</div>
+
+					<div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/20 transition-all hover:-translate-y-1 sm:col-span-2">
+						<span class="text-3xl mt-1 drop-shadow-lg">🎯</span>
+						<div>
+							<span class="block text-xs font-semibold uppercase tracking-wider text-blue-400 mb-1">Mục tiêu học tập</span>
+							<span class="text-lg text-white font-medium leading-relaxed">Xây dựng nền tảng lập trình vững chắc, và mở rộng ngôn ngữ cá nhân.</span>
+						</div>
+					</div>
+
+					<div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/20 transition-all hover:-translate-y-1 sm:col-span-2">
+						<span class="text-3xl mt-1 drop-shadow-lg">🌟</span>
+						<div>
+							<span class="block text-xs font-semibold uppercase tracking-wider text-fuchsia-400 mb-1">Định hướng phát triển</span>
+							<span class="text-lg text-white font-medium leading-relaxed">Trở thành một người có chuyên môn và năng lực, tìm kiếm được bản sắc cá nhân và mở rộng góc nhìn thực tế.</span>
+						</div>
+					</div>
+
+					<div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/20 transition-all hover:-translate-y-1 sm:col-span-2">
+						<span class="text-3xl mt-1 drop-shadow-lg">📬</span>
+						<div>
+							<span class="block text-xs font-semibold uppercase tracking-wider text-cyan-400 mb-1">Liên hệ</span>
+							<a href="mailto:25020436@vnu.edu.vn" class="text-lg text-white font-medium leading-relaxed hover:text-cyan-300 transition-colors underline decoration-cyan-400/30 underline-offset-4">25020436@vnu.edu.vn</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

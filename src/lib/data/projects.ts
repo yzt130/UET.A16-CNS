@@ -6,6 +6,7 @@ export interface Project {
 	summary: string;
 	fileUrl: string;
 	fileName: string;
+	icon?: string;
 }
 
 export const projects: Project[] = [
@@ -17,7 +18,8 @@ export const projects: Project[] = [
 		summary:
 			'Thực hiện 12 bước thao tác cơ bản với File Explorer. Bao gồm việc tạo thư mục cá nhân, tạo và đổi tên tệp văn bản, quản lý cấu trúc tài liệu bằng cách sao chép và di chuyển tệp, và cuối cùng là thao tác xóa vĩnh viễn và khôi phục từ Thùng rác (Recycle Bin).',
 		fileUrl: '/assets/exercises/Ex1_Week1_Sol.docx',
-		fileName: 'Ex1_Week1_Sol.docx'
+		fileName: 'Ex1_Week1_Sol.docx',
+		icon: '📁'
 	},
 	{
 		id: 'ex2-week2',
@@ -27,7 +29,8 @@ export const projects: Project[] = [
 		summary:
 			'Chọn chủ đề "Tác động của trí tuệ nhân tạo (AI) trong giáo dục". Tìm kiếm và tổng hợp 10 tài liệu tham khảo (bao gồm ít nhất 5 bài báo khoa học) từ Google Scholar, tạp chí khoa học và sách. Đánh giá độ tin cậy dựa trên tác giả, cơ quan xuất bản, phương pháp nghiên cứu, và tính cập nhật.',
 		fileUrl: '/assets/exercises/Ex2_Week2_Sol.docx',
-		fileName: 'Ex2_Week2_Sol.docx'
+		fileName: 'Ex2_Week2_Sol.docx',
+		icon: '🔍'
 	},
 	{
 		id: 'ex2-week3',
@@ -37,7 +40,8 @@ export const projects: Project[] = [
 		summary:
 			'Áp dụng vào 3 tác vụ: Tóm tắt tài liệu, giải thích khái niệm, và tạo câu hỏi ôn tập. Xây dựng 3 phiên bản prompt cho mỗi tác vụ (Cơ bản, Cải tiến, Nâng cao). Thử nghiệm, so sánh kết quả và rút ra các nguyên tắc cốt lõi khi viết prompt (đóng vai, cụ thể hóa, cấu trúc hóa yêu cầu).',
 		fileUrl: '/assets/exercises/Ex2_Week3_Sol.docx',
-		fileName: 'Ex2_Week3_Sol.docx'
+		fileName: 'Ex2_Week3_Sol.docx',
+		icon: '✍️'
 	},
 	{
 		id: 'ex3-week4',
@@ -47,7 +51,8 @@ export const projects: Project[] = [
 		summary:
 			'Sử dụng Trello để quản lý nhiệm vụ (Kanban board), Google Docs để cùng soạn thảo văn bản, và Discord để trao đổi thông tin. Theo dõi tiến độ trong 1 tuần, tổng hợp những khó khăn gặp phải trong quá trình làm việc nhóm và đề xuất các giải pháp khắc phục.',
 		fileUrl: '/assets/exercises/Ex3_Week4_Sol.docx',
-		fileName: 'Ex3_Week4_Sol.docx'
+		fileName: 'Ex3_Week4_Sol.docx',
+		icon: '🤝'
 	},
 	{
 		id: 'ex2-week5',
@@ -57,7 +62,8 @@ export const projects: Project[] = [
 		summary:
 			'Tạo nội dung với chủ đề "Hội chứng trì hoãn ở sinh viên". Kết hợp 4 công cụ AI: Google Gemini (lên dàn ý), ChatGPT (viết nháp và điều chỉnh giọng văn), DALL-E 3 (tạo ảnh minh họa), và Canva AI (dàn trang infographic). Đánh giá điểm mạnh/yếu của từng công cụ.',
 		fileUrl: '/assets/exercises/Ex2_Week5_Sol.docx',
-		fileName: 'Ex2_Week5_Sol.docx'
+		fileName: 'Ex2_Week5_Sol.docx',
+		icon: '🎨'
 	},
 	{
 		id: 'ex4-week6',
@@ -67,6 +73,7 @@ export const projects: Project[] = [
 		summary:
 			'Phân tích chính sách sử dụng AI của Đại học RMIT Việt Nam và so sánh với các trường đại học công lập khác. Thực hiện tổng hợp tài liệu bằng ChatGPT và ghi lại quá trình kiểm chứng thông tin (fact-checking). Đề xuất bộ nguyên tắc cá nhân về sử dụng AI có trách nhiệm.',
 		fileUrl: '/assets/exercises/Ex4_Week6_Sol.docx',
-		fileName: 'Ex4_Week6_Sol.docx'
+		fileName: 'Ex4_Week6_Sol.docx',
+		icon: '⚖️'
 	}
 ];

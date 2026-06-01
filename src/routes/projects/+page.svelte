@@ -30,6 +30,7 @@
 					summary={project.summary}
 					tag={project.tag}
 					link={`/projects/${project.id}`}
+					icon={project.icon}
 				/>
 			</div>
 		{/each}

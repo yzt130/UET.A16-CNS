@@ -1,9 +1,10 @@
 <script lang="ts">
-	let { title, summary, link, tag } = $props<{
+	let { title, summary, link, tag, icon } = $props<{
 		title: string;
 		summary: string;
 		link: string;
 		tag: string;
+		icon?: string;
 	}>();
 </script>
 
@@ -13,12 +14,15 @@
 			class="absolute top-0 left-0 h-1 w-full origin-left scale-x-0 transform bg-linear-to-r from-indigo-500 to-purple-500 transition-transform duration-500 group-hover:scale-x-100"
 		></div>
 
-		<div class="mb-4">
+		<div class="mb-4 flex items-center justify-between">
 			<span
 				class="inline-flex items-center rounded-full border border-indigo-500/20 bg-indigo-500/10 px-2.5 py-0.5 text-xs font-medium text-indigo-400"
 			>
 				{tag}
 			</span>
+			{#if icon}
+				<span class="text-3xl drop-shadow-[0_0_8px_rgba(99,102,241,0.5)]">{icon}</span>
+			{/if}
 		</div>
 
 		<h3

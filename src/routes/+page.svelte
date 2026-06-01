@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { fly, fade } from 'svelte/transition';
+	import profilePic from '$lib/assets/logo.jpg';
 </script>
 
 <svelte:head>
@@ -58,6 +59,24 @@
 		</div>
 	</div>
 
+	<!-- About Me Section -->
+	<div
+		class="mx-auto mt-10 mb-10 w-full max-w-4xl px-4 sm:px-6 lg:px-8"
+		in:fade={{ duration: 1000, delay: 400 }}
+	>
+		<div class="glass-card rounded-3xl p-8 md:p-12 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
+			<div class="h-32 w-32 shrink-0 overflow-hidden rounded-full border-4 border-indigo-500/30 shadow-[0_0_20px_rgba(79,70,229,0.3)]">
+				<img src={profilePic} alt="Đặng Thảo Vy" class="h-full w-full object-cover" />
+			</div>
+			<div>
+				<h2 class="mb-4 font-display text-3xl font-bold text-white">About Me</h2>
+				<p class="leading-relaxed text-slate-400">
+					Xin chào! Mình là Đặng Thảo Vy, một sinh viên đam mê khám phá công nghệ số và ứng dụng trí tuệ nhân tạo. Mình tin rằng việc làm chủ các công cụ AI và công nghệ hiện đại không chỉ giúp tối ưu hóa việc học tập mà còn mở ra nhiều cơ hội phát triển bản thân. Chào mừng bạn đến với góc nhỏ của mình!
+				</p>
+			</div>
+		</div>
+	</div>
+
 	<!-- Goals Section -->
 	<div
 		class="mx-auto mt-10 w-full max-w-5xl px-4 sm:px-6 lg:px-8"
@@ -83,10 +102,11 @@
 					>
 				</div>
 				<h3 class="mb-4 text-xl font-bold text-white">Mục Tiêu Học Tập</h3>
-				<p class="leading-relaxed text-slate-400">
-					Thể hiện quá trình tiếp thu và làm chủ các kỹ năng số, từ thao tác cơ bản đến việc sử dụng
-					các công cụ AI tiên tiến. Rèn luyện tư duy logic và khả năng tự học.
-				</p>
+				<ul class="list-inside list-disc space-y-2 text-slate-400 leading-relaxed">
+					<li>Thể hiện quá trình tiếp thu và làm chủ các kỹ năng số, từ thao tác cơ bản đến việc sử dụng các công cụ AI tiên tiến.</li>
+					<li>Rèn luyện tư duy logic và khả năng tự học.</li>
+					<li>Trang bị những kiến thức và kỹ năng cần thiết để thích ứng với kỉ nguyên số và tận dụng tiềm năng của trí tuệ nhân tạo trong học tập, nghiên cứu và cuộc sống.</li>
+				</ul>
 			</div>
 
 			<div class="glass-card rounded-3xl p-8">

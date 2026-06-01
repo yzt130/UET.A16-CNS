@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { fly, fade } from 'svelte/transition';
 	import profilePic from '$lib/assets/logo.jpg';
+	import mePic from '$lib/assets/me.jpg';
 </script>
 
 <svelte:head>
@@ -61,15 +62,23 @@
 
 	<!-- About Me Section -->
 	<div
-		class="mx-auto mt-10 mb-10 w-full max-w-4xl px-4 sm:px-6 lg:px-8"
+		class="mx-auto mt-10 mb-10 w-full max-w-6xl px-4 sm:px-6 lg:px-8"
 		in:fade={{ duration: 1000, delay: 400 }}
 	>
-		<div class="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10">
-			<div class="group h-40 w-40 shrink-0 overflow-hidden rounded-full border-4 border-indigo-500/30 shadow-[0_0_30px_rgba(79,70,229,0.3)] transition-all duration-500 hover:scale-105 hover:border-pink-500/50 hover:shadow-[0_0_40px_rgba(236,72,153,0.4)]">
-				<img src={profilePic} alt="Đặng Thảo Vy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+		<div class="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-center gap-12">
+			<div class="relative group shrink-0 transition-all duration-500 hover:-translate-y-2 md:mt-8">
+				<!-- Lấp lánh xung quanh -->
+				<span class="absolute -top-4 -left-4 text-4xl animate-[bounce_3s_infinite] drop-shadow-[0_0_10px_rgba(253,224,71,0.8)] z-10 pointer-events-none">✨</span>
+				<span class="absolute -bottom-2 -right-2 text-3xl animate-[pulse_2s_infinite] drop-shadow-[0_0_10px_rgba(253,224,71,0.8)] z-10 pointer-events-none">⭐</span>
+				<span class="absolute top-1/2 -right-6 text-2xl animate-[bounce_4s_infinite] drop-shadow-[0_0_10px_rgba(253,224,71,0.8)] z-10 pointer-events-none">✨</span>
+				
+				<!-- Khung viền hình chữ nhật -->
+				<div class="relative h-80 w-64 md:h-[420px] md:w-80 overflow-hidden rounded-2xl border-[6px] border-double border-yellow-300/50 shadow-[0_0_30px_rgba(253,224,71,0.4)] group-hover:border-yellow-300/80 group-hover:shadow-[0_0_50px_rgba(253,224,71,0.6)] transition-all duration-500">
+					<img src={mePic} alt="Đặng Thảo Vy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+				</div>
 			</div>
-			<div class="flex-1 w-full">
-				<h2 class="mb-6 font-display text-3xl font-bold text-white text-center md:text-left flex items-center justify-center md:justify-start gap-3">
+			<div class="flex-1 w-full flex flex-col justify-center">
+				<h2 class="mb-8 font-display text-4xl md:text-5xl font-bold text-white text-left flex items-center justify-start gap-3">
 					About Me
 				</h2>
 				<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-slate-300">

@@ -36,10 +36,11 @@ To create a production version of your app:
 ```sh
 npm run build
 
-# you can see my prj at penginz3017f.pages.dev
 
 ```
 
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+# you can see my prj at "pengin3017f.pages.dev"
